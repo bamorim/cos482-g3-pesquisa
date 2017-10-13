@@ -29,8 +29,117 @@
         [Diagrama do modelo](https://drive.google.com/a/poli.ufrj.br/file/d/0Bx6YCTg5hLKVQzl0QUprcFhyQ00/view?usp=sharing)
 
    2. Definição operacional de indicadores e respectivas medidas
+    
+        1. IDDT
+            * Nome: Índice de densidade de defeitos em teste
+            * Definicão: Mede a densidade de defeitos em testes
+            * Objetivos: Indicar a qualidade do código produzido e sua evoclucão temporal
+            * Questões: Qual a densidade de defeitos em teste do produto de software?
+            * Hipóteses: Falhas em testes indicam qualidade do software produzido
+            * Entidades Mensuráveis: Testes de software
+            * Unidade de Medida: Testes falhos por testes totais
+            * Intervalo de Dados: Reais de 0 a 1
+            * Tipo de Escala: razão
+            * Valores da Escala: Números fracionários com qualquer grau de precisão
+            * Funcão de Medicão: IDDT = Tf/ Tt (número de testes falhos pelo número de testes totais
+            * Momento: Execucão da rodada de testes
+            * Peridiocidade: Pelo menos uma vez por iteracão
+            * Procedimento de medicão: Leitura do relatório automático de testes
+            * Ferramentas: Testes do JHipster e planilha de medicões
+            * Agentes: Testador, responsável pela execucão dos testes
+            
+        2. INDA
+            * Nome: Índice de Número de Defeitos por Artefato						
+            * Definicão: Mede a densidade de defeitos em artefatos
+            * Objetivos: Indicar a qualidade dos artefatos produzidos e sua evoclucão temporal
+            * Questões: Qual a densidade de defeitos em artefatos relacionados ao produto de software?
+            * Hipóteses: Falhas em artefatos indicam qualidade do software produzido
+            * Entidades Mensuráveis: Artefatos
+            * Unidade de Medida: Testes falhos por testes totais
+            * Intervalo de Dados: Reais de 0 a 1
+            * Tipo de Escala: razão
+            * Valores da Escala: Números fracionários com qualquer grau de precisão
+            * Funcão de Medicão: INDA = Tf/ Tt (número de testes falhos pelo número de testes totais
+            * Momento: Execucão da rodada de avaliacões
+            * Peridiocidade: Pelo menos uma vez por iteracão
+            * Procedimento de medicão: Leitura dos artefatos
+            * Ferramentas: Planilha de medicões
+            * Agentes: Testador, responsável pela avaliacão dos artefatos
 
-        Os indicadores propostos se encontram na [planilha de medicões](https://docs.google.com/a/poli.ufrj.br/spreadsheets/d/1zJ26MskGE87uit8OgGvDgxTuLT0m9gcfpACok17qtAU/edit?usp=sharing).
+        3. IQTNAP
+            * Nome: Índice de quantidade de tarefas não relacionadas a atividades do processo											
+            * Definicão: Mede a quantidade de tarefas não relacionadas a atividades do processo
+            * Objetivos: Indicar a conformidade com o processo de software
+            * Questões: Qual é a quantidade de tarefas sem relacionamento com o modelo?
+            * Hipóteses: A conformidade com o processo indica qualidade do software produzido
+            * Entidades Mensuráveis: Tarefas e modelo do processo
+            * Unidade de Medida: Número de tarefas
+            * Intervalo de Dados: Inteiros positivos e zero
+            * Tipo de Escala: ordinal
+            * Valores da Escala: Números inteiros
+            * Funcão de Medicão: IQTNAP, a contagem de ocorrências 
+            * Momento: Execucão da rodada de testes
+            * Peridiocidade: Pelo menos uma vez por iteracão
+            * Procedimento de medicão: Leitura das tarefas e do modelo
+            * Ferramentas: Planilha de medicões
+            * Agentes: Avaliador, responsável pela avaliacão das tarefas
+
+        4. IQAPNT
+            * Nome: Índice de quantidade de atividades do processo não relacionadas a tarefas											
+            * Definicão: Mede a quantidade de atividades do processo não relacionadas a tarefas
+            * Objetivos: Indicar a conformidade com o processo de software
+            * Questões: Qual é a quantidade de atividades do processo não relacionadas a tarefas?
+            * Hipóteses: A conformidade com o processo indica qualidade do software produzido
+            * Entidades Mensuráveis: Tarefas e modelo do processo
+            * Unidade de Medida: Número de tarefas
+            * Intervalo de Dados: Inteiros positivos e zero
+            * Tipo de Escala: ordinal
+            * Valores da Escala: Números inteiros
+            * Funcão de Medicão: IQAPNT, a contagem de ocorrências 
+            * Momento: Execucão da rodada de testes
+            * Peridiocidade: Pelo menos uma vez por iteracão
+            * Procedimento de medicão: Leitura das tarefas e do modelo
+            * Ferramentas: Planilha de medicões
+            * Agentes: Avaliador, responsável pela avaliacão das tarefas
+            
+        5. IPPE
+            * Nome: Índice de percentual de pontos entregues																
+            * Definicão: Mede  o percentual de pontos entregues
+            * Objetivos: Indicar a conformidade com o cronograma
+            * Questões: Qual é o percentual de pontos entregues?
+            * Hipóteses: A conformidade com o cronograma indica qualidade do software produzido
+            * Entidades Mensuráveis: Tarefas entregues 
+            * Unidade de Medida: Número de tarefas entregues
+            * Intervalo de Dados: Reais de 0 a 1
+            * Tipo de Escala: razão
+            * Valores da Escala: Números fracionários
+            * Funcão de Medicão: IPPE, número de tarefas entregues pelo número total planejado
+            * Momento: Avaliacão das tarefas concluídas e planejamento de sprint
+            * Peridiocidade: Pelo menos uma vez por iteracão
+            * Procedimento de medicão: Leitura das tarefas
+            * Ferramentas: Planilha de medicões
+            * Agentes: Avaliador, responsável pela avaliacão das tarefas
+            
+        6. QPEM
+            * Nome: Índice de percentual de pontos entregues por membro															
+            * Definicão: Mede  o percentual de pontos entregues poe membro
+            * Objetivos: Indicar a conformidade com o cronograma e a capacidade produtiva dos membros
+            * Questões: Qual é o percentual de pontos entregues por membro?
+            * Hipóteses: A conformidade com o cronograma e com o processo indica qualidade do software produzido
+            * Entidades Mensuráveis: Tarefas entregues 
+            * Unidade de Medida: Número de tarefas entregues
+            * Intervalo de Dados: Reais de 0 a 1
+            * Tipo de Escala: razão
+            * Valores da Escala: Números fracionários
+            * Funcão de Medicão: QPEM, número de tarefas entregues por membro pelo número total planejado para o membro
+            * Momento: Avaliacão das tarefas concluídas e planejamento de sprint
+            * Peridiocidade: Pelo menos uma vez por iteracão
+            * Procedimento de medicão: Leitura das tarefas
+            * Ferramentas: Planilha de medicões
+            * Agentes: Avaliador, responsável pela avaliacão das tarefas
+            
+            
+        As medicões dos indicadores propostos se encontram na [planilha de medicões](https://docs.google.com/a/poli.ufrj.br/spreadsheets/d/1zJ26MskGE87uit8OgGvDgxTuLT0m9gcfpACok17qtAU/edit?usp=sharing).
 
   3. Recursos
       1. Perfil do recurso humano
