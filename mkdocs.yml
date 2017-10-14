@@ -5,6 +5,7 @@ theme_dir: 'docs/theme'
 markdown_extensions:
   - plantuml
   - tables
+  - graphviz
 pages:
 - ['index.md', 'Introdução']
 - ['VISION.md', 'Visão']
