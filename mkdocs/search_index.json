@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Sistema de Acompanhamento de Pesquisa COPPE/UFRJ\n\n\nEquipe\n\n\n| Nome            | Papel                            |\n| Bernardo Amorim | Desenvolvedor                    |\n| Eric Reis       | Desenvolvedor                    |\n| Henrique Maio   | Desenvolvedor / L\u00edder de projeto |\n| Pedro Boueke    | Desenvolvedor                    |\n| Yago Carvalho   | Desenvolvedor                    |",
+            "text": "Sistema de Acompanhamento de Pesquisa COPPE/UFRJ\n\n\nEquipe\n\n\n\n\n\n\n\n\nNome\n\n\nPapel\n\n\n\n\n\n\n\n\n\n\nBernardo Amorim\n\n\nDesenvolvedor\n\n\n\n\n\n\nEric Reis\n\n\nDesenvolvedor\n\n\n\n\n\n\nHenrique Maio\n\n\nDesenvolvedor / L\u00edder de projeto\n\n\n\n\n\n\nPedro Boueke\n\n\nDesenvolvedor\n\n\n\n\n\n\nYago Carvalho\n\n\nDesenvolvedor",
             "title": "Introdu\u00e7\u00e3o"
         },
         {
@@ -12,7 +12,7 @@
         },
         {
             "location": "/#equipe",
-            "text": "| Nome            | Papel                            |\n| Bernardo Amorim | Desenvolvedor                    |\n| Eric Reis       | Desenvolvedor                    |\n| Henrique Maio   | Desenvolvedor / L\u00edder de projeto |\n| Pedro Boueke    | Desenvolvedor                    |\n| Yago Carvalho   | Desenvolvedor                    |",
+            "text": "Nome  Papel      Bernardo Amorim  Desenvolvedor    Eric Reis  Desenvolvedor    Henrique Maio  Desenvolvedor / L\u00edder de projeto    Pedro Boueke  Desenvolvedor    Yago Carvalho  Desenvolvedor",
             "title": "Equipe"
         },
         {
