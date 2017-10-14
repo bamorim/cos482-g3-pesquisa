@@ -4,6 +4,7 @@ theme: 'material'
 theme_dir: 'docs/theme'
 markdown_extensions:
   - plantuml
+  - tables
 pages:
 - ['index.md', 'Introdução']
 - ['VISION.md', 'Visão']

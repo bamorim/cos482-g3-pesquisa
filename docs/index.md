@@ -3,6 +3,7 @@
 ## Equipe ##
 
 | Nome            | Papel                            |
+| --------------- | -------------------------------- |
 | Bernardo Amorim | Desenvolvedor                    |
 | Eric Reis       | Desenvolvedor                    |
 | Henrique Maio   | Desenvolvedor / Líder de projeto |
