@@ -147,7 +147,7 @@
         },
         {
             "location": "/USECASES/",
-            "text": "Casos de Uso\n\n\nVis\u00e3o geral dos casos de uso",
+            "text": "Casos de Uso\n\n\nVis\u00e3o geral dos casos de uso\n\n\n\n\nDetalhamento dos Casos de Uso\n\n\nUC01 - Cadastrar aluno\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n: Aluno ainda n\u00e3o existe no sistema\n\n\nPos-condi\u00e7\u00f5es\n: Aluno existe no sistema\n\n\n\n\n\n\n\n\n\n\nFluxo Principal\n\n\n\n\n\n\n\n\n\n\n1. Secretaria informa \ndados do aluno\n\n\n\n\n\n\n2. Sistema confirma cadastro\n\n\n\n\n\n\n\n\nUC02 - Visualizar aluno\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n: Aluno existe no sistema\n\n\nPos-condi\u00e7\u00f5es\n: -\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n1. Secretaria informa numero de cadastro do aluno\n\n\n\n\n\n\n2. Sistema exibe os \ndados do aluno\n\n\n\n\n\n\n\n\nUC03 - Atualizar aluno\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n: Aluno existe no sistea\n\n\nPos-condi\u00e7\u00f5es\n: Aluno \u00e9 modificado no sistema\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n1. Secretaria informa n\u00famero de cadastro do aluno\n\n\n\n\n\n\n2. Secretaria informa novos \ndados do aluno\n\n\n\n\n\n\n3. Sistema confirma atualiza\u00e7\u00e3o do aluno\n\n\n\n\n\n\n\n\nUC04 - Remover aluno\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n: Aluno existe no sistema\n\n\nPos-condi\u00e7\u00f5es\n: Aluno n\u00e3o existe mais no sistema\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n1. Secretaria informa n\u00famero de cadastro do aluno\n\n\n\n\n\n\n2. Sistema confirma remo\u00e7\u00e3o do aluno\n\n\n\n\n\n\n\n\nUC05 - Cadastrar professor\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n: Professor ainda n\u00e3o existe no sistema\n\n\nPos-condi\u00e7\u00f5es\n: Professor existe no sistema\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n1. Secretaria informa \ndados do professor\n\n\n\n\n\n\n2. Sistema confirma cadastro\n\n\n\n\n\n\n\n\nUC06 - Visualizar professor\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n: Professor existe no sistema\n\n\nPos-condi\u00e7\u00f5es\n: -\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n1. Secretaria informa numero de cadastro do professor\n\n\n\n\n\n\n2. Sistema exibe os \ndados do professor\n\n\n\n\n\n\n\n\nUC07 - Atualizar professor\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n: Professor existe no sistea\n\n\nPos-condi\u00e7\u00f5es\n: Professor \u00e9 modificado no sistema\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n1. Secretaria informa n\u00famero de cadastro do professor\n\n\n\n\n\n\n2. Secretaria informa novos \ndados do professor\n\n\n\n\n\n\n3. Sistema confirma atualiza\u00e7\u00e3o do professor\n\n\n\n\n\n\n\n\nUC08 - Remover professor\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n: Professor existe no sistema\n\n\nPos-condi\u00e7\u00f5es\n: Professor n\u00e3o existe mais no sistema\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n1. Secretaria informa n\u00famero de cadastro do professor\n\n\n\n\n\n\n2. Sistema confirma remo\u00e7\u00e3o do professor\n\n\n\n\n\n\n\n\nUC09 - Escolher professor orientador\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n: Aluno existe no sistema e est\u00e1 autenticado\n\n\nPos-condi\u00e7\u00f5es\n: Professor \u00e9 associado como orientador do aluno em estado n\u00e3o confirmado\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n1. Aluno informa nome completo ou parcial do professor\n\n\n\n\n\n\n2. Sistema exibe lista de professores que correspondem aos crit\u00e9rios\n\n\n\n\n\n\n3. Aluno informa desejo de ser orientado por algum dos professores exibidos\n\n\n\n\n\n\n4. Sistema confirma recebimento de pedido de escolha de professor orientador\n\n\n\n\n\n\n\n\nUC10 - Agendar reuni\u00e3o com orientador\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n:\n\n\nAluno existe no sistema\n\n\nAluno est\u00e1 autenticado\n\n\nAluno tem professor orientador escolhido\n\n\nPos-condi\u00e7\u00f5es\n: Reuni\u00e3o com orientador \u00e9 agendada\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n1. Aluno informa data e hora e dura\u00e7\u00e3o da reuni\u00e3o\n\n\n\n\n\n\n2. Sistema exibe confirma\u00e7\u00e3o do agendamento de reuni\u00e3o\n\n\n\n\n\n\n\n\nUC11 - Submeter texto para defesa\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n:\n\n\nAluno existe no sistema\n\n\nAluno est\u00e1 autenticado\n\n\nAluno j\u00e1 agendou defesa\n\n\nPos-condi\u00e7\u00f5es\n: Texto da defesa est\u00e1 atualizado \n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n1. Aluno informa identifica\u00e7\u00e3o da defesa e envia o texto\n\n\n\n\n\n\n2. Sistema exibe confirma\u00e7\u00e3o de atualiza\u00e7\u00e3o do texto da defesa\n\n\n\n\n\n\n\n\nUC12 - Agendar semin\u00e1rio\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n: -\n\n\nPos-condi\u00e7\u00f5es\n: -\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUC13 - Cadastrar publica\u00e7\u00e3o\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n\n\nAluno existe no sistema\n\n\nAluno est\u00e1 autenticado\n\n\nPublica\u00e7\u00e3o ainda n\u00e3o existe no sistema\n\n\nPos-condi\u00e7\u00f5es\n: Publica\u00e7\u00e3o existe no sistema\n\n\n\n\n\n\n\n\n\n\nFluxo Principal\n\n\n\n\n\n\n\n\n\n\n1. Aluno informa \ndados da publica\u00e7\u00e3o\n\n\n\n\n\n\n2. Sistema confirma cadastro\n\n\n\n\n\n\n\n\nUC14 - Visualizar publica\u00e7\u00e3o\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n\n\nAluno existe no sistema\n\n\nAluno est\u00e1 autenticado\n\n\nPublica\u00e7\u00e3o existe no sistema\n\n\nPos-condi\u00e7\u00f5es\n: -\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n1. Aluno informa numero de cadastro do publica\u00e7\u00e3o\n\n\n\n\n\n\n2. Sistema exibe os \ndados da publica\u00e7\u00e3o\n\n\n\n\n\n\n\n\nUC15 - Atualizar publica\u00e7\u00e3o\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n\n\nAluno existe no sistema\n\n\nAluno est\u00e1 autenticado\n\n\nPublica\u00e7\u00e3o existe no sistea\n\n\nPos-condi\u00e7\u00f5es\n: Publica\u00e7\u00e3o \u00e9 modificado no sistema\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n1. Aluno informa n\u00famero de cadastro do publica\u00e7\u00e3o\n\n\n\n\n\n\n2. Aluno informa novos \ndados da publica\u00e7\u00e3o\n\n\n\n\n\n\n3. Sistema confirma atualiza\u00e7\u00e3o do publica\u00e7\u00e3o\n\n\n\n\n\n\n\n\nUC16 - Remover publica\u00e7\u00e3o\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n\n\nAluno existe no sistema\n\n\nAluno est\u00e1 autenticado\n\n\nPublica\u00e7\u00e3o existe no sistema\n\n\nPos-condi\u00e7\u00f5es\n: Publica\u00e7\u00e3o n\u00e3o existe mais no sistema\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n1. Aluno informa n\u00famero de cadastro do publica\u00e7\u00e3o\n\n\n\n\n\n\n2. Sistema confirma remo\u00e7\u00e3o do publica\u00e7\u00e3o\n\n\n\n\n\n\n\n\nUC17 - Agendar defesa\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n: -\n\n\nPos-condi\u00e7\u00f5es\n: -\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUC18 - Modificar banca da defesa\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n: -\n\n\nPos-condi\u00e7\u00f5es\n: -\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUC19 - Confirmar participa\u00e7\u00e3o na banca\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n: -\n\n\nPos-condi\u00e7\u00f5es\n: -\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUC20 - Aprovar defesa\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n: -\n\n\nPos-condi\u00e7\u00f5es\n: -\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUC21 - Rejeitar defesa\n\n\n\n\nPr\u00e9-condi\u00e7\u00f5es\n: -\n\n\nPos-condi\u00e7\u00f5es\n: -\n\n\n\n\n\n\n\n\n\n\nFluxo principal\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTabelas auxiliares\n\n\nDados do aluno\n\n\n\n\n\n\n\n\nCampo\n\n\nDescri\u00e7\u00e3o\n\n\n\n\n\n\n\n\n\n\nNome\n\n\nNome Completo\n\n\n\n\n\n\nDRE\n\n\nCadastro na universidade\n\n\n\n\n\n\n\n\nDados do professor\n\n\n\n\n\n\n\n\nCampo\n\n\nDescri\u00e7\u00e3o\n\n\n\n\n\n\n\n\n\n\nNome\n\n\nNome do professor\n\n\n\n\n\n\n\n\nDados da publica\u00e7\u00e3o\n\n\n\n\n\n\n\n\nCampo\n\n\nDescri\u00e7\u00e3o\n\n\n\n\n\n\n\n\n\n\nTipoPublicacao\n\n\nPode ser Revista, Congresso ou Peri\u00f3dico\n\n\n\n\n\n\nPertenceAoPrograma\n\n\nVerdadeiro ou falso. Se verdadeiro, esta publica\u00e7\u00e3o faz da pesquisa do programa\n\n\n\n\n\n\nCoautores\n\n\nLista de coautores",
             "title": "Casos de Uso"
         },
         {
@@ -159,6 +159,136 @@
             "location": "/USECASES/#visao-geral-dos-casos-de-uso",
             "text": "",
             "title": "Vis\u00e3o geral dos casos de uso"
+        },
+        {
+            "location": "/USECASES/#detalhamento-dos-casos-de-uso",
+            "text": "",
+            "title": "Detalhamento dos Casos de Uso"
+        },
+        {
+            "location": "/USECASES/#uc01-cadastrar-aluno",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es : Aluno ainda n\u00e3o existe no sistema  Pos-condi\u00e7\u00f5es : Aluno existe no sistema      Fluxo Principal      1. Secretaria informa  dados do aluno    2. Sistema confirma cadastro",
+            "title": "UC01 - Cadastrar aluno"
+        },
+        {
+            "location": "/USECASES/#uc02-visualizar-aluno",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es : Aluno existe no sistema  Pos-condi\u00e7\u00f5es : -      Fluxo principal      1. Secretaria informa numero de cadastro do aluno    2. Sistema exibe os  dados do aluno",
+            "title": "UC02 - Visualizar aluno"
+        },
+        {
+            "location": "/USECASES/#uc03-atualizar-aluno",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es : Aluno existe no sistea  Pos-condi\u00e7\u00f5es : Aluno \u00e9 modificado no sistema      Fluxo principal      1. Secretaria informa n\u00famero de cadastro do aluno    2. Secretaria informa novos  dados do aluno    3. Sistema confirma atualiza\u00e7\u00e3o do aluno",
+            "title": "UC03 - Atualizar aluno"
+        },
+        {
+            "location": "/USECASES/#uc04-remover-aluno",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es : Aluno existe no sistema  Pos-condi\u00e7\u00f5es : Aluno n\u00e3o existe mais no sistema      Fluxo principal      1. Secretaria informa n\u00famero de cadastro do aluno    2. Sistema confirma remo\u00e7\u00e3o do aluno",
+            "title": "UC04 - Remover aluno"
+        },
+        {
+            "location": "/USECASES/#uc05-cadastrar-professor",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es : Professor ainda n\u00e3o existe no sistema  Pos-condi\u00e7\u00f5es : Professor existe no sistema      Fluxo principal      1. Secretaria informa  dados do professor    2. Sistema confirma cadastro",
+            "title": "UC05 - Cadastrar professor"
+        },
+        {
+            "location": "/USECASES/#uc06-visualizar-professor",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es : Professor existe no sistema  Pos-condi\u00e7\u00f5es : -      Fluxo principal      1. Secretaria informa numero de cadastro do professor    2. Sistema exibe os  dados do professor",
+            "title": "UC06 - Visualizar professor"
+        },
+        {
+            "location": "/USECASES/#uc07-atualizar-professor",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es : Professor existe no sistea  Pos-condi\u00e7\u00f5es : Professor \u00e9 modificado no sistema      Fluxo principal      1. Secretaria informa n\u00famero de cadastro do professor    2. Secretaria informa novos  dados do professor    3. Sistema confirma atualiza\u00e7\u00e3o do professor",
+            "title": "UC07 - Atualizar professor"
+        },
+        {
+            "location": "/USECASES/#uc08-remover-professor",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es : Professor existe no sistema  Pos-condi\u00e7\u00f5es : Professor n\u00e3o existe mais no sistema      Fluxo principal      1. Secretaria informa n\u00famero de cadastro do professor    2. Sistema confirma remo\u00e7\u00e3o do professor",
+            "title": "UC08 - Remover professor"
+        },
+        {
+            "location": "/USECASES/#uc09-escolher-professor-orientador",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es : Aluno existe no sistema e est\u00e1 autenticado  Pos-condi\u00e7\u00f5es : Professor \u00e9 associado como orientador do aluno em estado n\u00e3o confirmado      Fluxo principal      1. Aluno informa nome completo ou parcial do professor    2. Sistema exibe lista de professores que correspondem aos crit\u00e9rios    3. Aluno informa desejo de ser orientado por algum dos professores exibidos    4. Sistema confirma recebimento de pedido de escolha de professor orientador",
+            "title": "UC09 - Escolher professor orientador"
+        },
+        {
+            "location": "/USECASES/#uc10-agendar-reuniao-com-orientador",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es :  Aluno existe no sistema  Aluno est\u00e1 autenticado  Aluno tem professor orientador escolhido  Pos-condi\u00e7\u00f5es : Reuni\u00e3o com orientador \u00e9 agendada      Fluxo principal      1. Aluno informa data e hora e dura\u00e7\u00e3o da reuni\u00e3o    2. Sistema exibe confirma\u00e7\u00e3o do agendamento de reuni\u00e3o",
+            "title": "UC10 - Agendar reuni\u00e3o com orientador"
+        },
+        {
+            "location": "/USECASES/#uc11-submeter-texto-para-defesa",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es :  Aluno existe no sistema  Aluno est\u00e1 autenticado  Aluno j\u00e1 agendou defesa  Pos-condi\u00e7\u00f5es : Texto da defesa est\u00e1 atualizado       Fluxo principal      1. Aluno informa identifica\u00e7\u00e3o da defesa e envia o texto    2. Sistema exibe confirma\u00e7\u00e3o de atualiza\u00e7\u00e3o do texto da defesa",
+            "title": "UC11 - Submeter texto para defesa"
+        },
+        {
+            "location": "/USECASES/#uc12-agendar-seminario",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es : -  Pos-condi\u00e7\u00f5es : -      Fluxo principal",
+            "title": "UC12 - Agendar semin\u00e1rio"
+        },
+        {
+            "location": "/USECASES/#uc13-cadastrar-publicacao",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es  Aluno existe no sistema  Aluno est\u00e1 autenticado  Publica\u00e7\u00e3o ainda n\u00e3o existe no sistema  Pos-condi\u00e7\u00f5es : Publica\u00e7\u00e3o existe no sistema      Fluxo Principal      1. Aluno informa  dados da publica\u00e7\u00e3o    2. Sistema confirma cadastro",
+            "title": "UC13 - Cadastrar publica\u00e7\u00e3o"
+        },
+        {
+            "location": "/USECASES/#uc14-visualizar-publicacao",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es  Aluno existe no sistema  Aluno est\u00e1 autenticado  Publica\u00e7\u00e3o existe no sistema  Pos-condi\u00e7\u00f5es : -      Fluxo principal      1. Aluno informa numero de cadastro do publica\u00e7\u00e3o    2. Sistema exibe os  dados da publica\u00e7\u00e3o",
+            "title": "UC14 - Visualizar publica\u00e7\u00e3o"
+        },
+        {
+            "location": "/USECASES/#uc15-atualizar-publicacao",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es  Aluno existe no sistema  Aluno est\u00e1 autenticado  Publica\u00e7\u00e3o existe no sistea  Pos-condi\u00e7\u00f5es : Publica\u00e7\u00e3o \u00e9 modificado no sistema      Fluxo principal      1. Aluno informa n\u00famero de cadastro do publica\u00e7\u00e3o    2. Aluno informa novos  dados da publica\u00e7\u00e3o    3. Sistema confirma atualiza\u00e7\u00e3o do publica\u00e7\u00e3o",
+            "title": "UC15 - Atualizar publica\u00e7\u00e3o"
+        },
+        {
+            "location": "/USECASES/#uc16-remover-publicacao",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es  Aluno existe no sistema  Aluno est\u00e1 autenticado  Publica\u00e7\u00e3o existe no sistema  Pos-condi\u00e7\u00f5es : Publica\u00e7\u00e3o n\u00e3o existe mais no sistema      Fluxo principal      1. Aluno informa n\u00famero de cadastro do publica\u00e7\u00e3o    2. Sistema confirma remo\u00e7\u00e3o do publica\u00e7\u00e3o",
+            "title": "UC16 - Remover publica\u00e7\u00e3o"
+        },
+        {
+            "location": "/USECASES/#uc17-agendar-defesa",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es : -  Pos-condi\u00e7\u00f5es : -      Fluxo principal",
+            "title": "UC17 - Agendar defesa"
+        },
+        {
+            "location": "/USECASES/#uc18-modificar-banca-da-defesa",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es : -  Pos-condi\u00e7\u00f5es : -      Fluxo principal",
+            "title": "UC18 - Modificar banca da defesa"
+        },
+        {
+            "location": "/USECASES/#uc19-confirmar-participacao-na-banca",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es : -  Pos-condi\u00e7\u00f5es : -      Fluxo principal",
+            "title": "UC19 - Confirmar participa\u00e7\u00e3o na banca"
+        },
+        {
+            "location": "/USECASES/#uc20-aprovar-defesa",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es : -  Pos-condi\u00e7\u00f5es : -      Fluxo principal",
+            "title": "UC20 - Aprovar defesa"
+        },
+        {
+            "location": "/USECASES/#uc21-rejeitar-defesa",
+            "text": "Pr\u00e9-condi\u00e7\u00f5es : -  Pos-condi\u00e7\u00f5es : -      Fluxo principal",
+            "title": "UC21 - Rejeitar defesa"
+        },
+        {
+            "location": "/USECASES/#tabelas-auxiliares",
+            "text": "",
+            "title": "Tabelas auxiliares"
+        },
+        {
+            "location": "/USECASES/#dados-do-aluno",
+            "text": "Campo  Descri\u00e7\u00e3o      Nome  Nome Completo    DRE  Cadastro na universidade",
+            "title": "Dados do aluno"
+        },
+        {
+            "location": "/USECASES/#dados-do-professor",
+            "text": "Campo  Descri\u00e7\u00e3o      Nome  Nome do professor",
+            "title": "Dados do professor"
+        },
+        {
+            "location": "/USECASES/#dados-da-publicacao",
+            "text": "Campo  Descri\u00e7\u00e3o      TipoPublicacao  Pode ser Revista, Congresso ou Peri\u00f3dico    PertenceAoPrograma  Verdadeiro ou falso. Se verdadeiro, esta publica\u00e7\u00e3o faz da pesquisa do programa    Coautores  Lista de coautores",
+            "title": "Dados da publica\u00e7\u00e3o"
         },
         {
             "location": "/models/EAP/",
