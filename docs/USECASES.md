@@ -42,3 +42,261 @@ B -down- (Aprovar defesa)
 B -down- (Rejeitar defesa)
 @enduml
 ```
+
+## Detalhamento dos Casos de Uso
+
+
+### UC01 - Cadastrar aluno
+* **Pré-condições**: Aluno ainda não existe no sistema
+* **Pos-condições**: Aluno existe no sistema
+
+| Fluxo Principal                                         |
+| ------------------------------------------------------- |
+| 1. Secretaria informa [dados do aluno](#dados-do-aluno) |
+| 2. Sistema confirma cadastro                            |
+
+
+### UC02 - Visualizar aluno
+* **Pré-condições**: Aluno existe no sistema
+* **Pos-condições**: -
+
+| Fluxo principal                                       |
+| ----------------------------------------------------- |
+| 1. Secretaria informa numero de cadastro do aluno     |
+| 2. Sistema exibe os [dados do aluno](#dados-do-aluno) |
+
+
+### UC03 - Atualizar aluno
+* **Pré-condições**: Aluno existe no sistea
+* **Pos-condições**: Aluno é modificado no sistema
+
+| Fluxo principal                                               |
+| ------------------------------------------------------------- |
+| 1. Secretaria informa número de cadastro do aluno             |
+| 2. Secretaria informa novos [dados do aluno](#dados-do-aluno) |
+| 3. Sistema confirma atualização do aluno                      |
+
+
+### UC04 - Remover aluno
+* **Pré-condições**: Aluno existe no sistema
+* **Pos-condições**: Aluno não existe mais no sistema
+
+| Fluxo principal                                   |
+| ------------------------------------------------- |
+| 1. Secretaria informa número de cadastro do aluno |
+| 2. Sistema confirma remoção do aluno              |
+
+
+### UC05 - Cadastrar professor
+* **Pré-condições**: Professor ainda não existe no sistema
+* **Pos-condições**: Professor existe no sistema
+
+| Fluxo principal                                                 |
+| --------------------------------------------------------------- |
+| 1. Secretaria informa [dados do professor](#dados-do-professor) |
+| 2. Sistema confirma cadastro                                    |
+
+
+### UC06 - Visualizar professor
+* **Pré-condições**: Professor existe no sistema
+* **Pos-condições**: -
+
+| Fluxo principal                                               |
+| ------------------------------------------------------------- |
+| 1. Secretaria informa numero de cadastro do professor         |
+| 2. Sistema exibe os [dados do professor](#dados-do-professor) |
+
+
+### UC07 - Atualizar professor
+* **Pré-condições**: Professor existe no sistea
+* **Pos-condições**: Professor é modificado no sistema
+
+| Fluxo principal                                                       |
+| --------------------------------------------------------------------- |
+| 1. Secretaria informa número de cadastro do professor                 |
+| 2. Secretaria informa novos [dados do professor](#dados-do-professor) |
+| 3. Sistema confirma atualização do professor                          |
+
+
+### UC08 - Remover professor
+* **Pré-condições**: Professor existe no sistema
+* **Pos-condições**: Professor não existe mais no sistema
+
+| Fluxo principal                                       |
+| ----------------------------------------------------- |
+| 1. Secretaria informa número de cadastro do professor |
+| 2. Sistema confirma remoção do professor              |
+
+
+### UC09 - Escolher professor orientador
+
+* **Pré-condições**: Aluno existe no sistema e está autenticado
+* **Pos-condições**: Professor é associado como orientador do aluno em estado não confirmado
+
+| Fluxo principal                                                              |
+| ---------------------------------------------------------------------------- |
+| 1. Aluno informa nome completo ou parcial do professor                       |
+| 2. Sistema exibe lista de professores que correspondem aos critérios         |
+| 3. Aluno informa desejo de ser orientado por algum dos professores exibidos  |
+| 4. Sistema confirma recebimento de pedido de escolha de professor orientador |
+
+### UC10 - Agendar reunião com orientador
+
+* **Pré-condições**:
+  * Aluno existe no sistema
+  * Aluno está autenticado
+  * Aluno tem professor orientador escolhido
+* **Pos-condições**: Reunião com orientador é agendada
+
+| Fluxo principal                                        |
+| ------------------------------------------------------ |
+| 1. Aluno informa data e hora e duração da reunião      |
+| 2. Sistema exibe confirmação do agendamento de reunião |
+
+
+### UC11 - Submeter texto para defesa
+
+* **Pré-condições**:
+  * Aluno existe no sistema
+  * Aluno está autenticado
+  * Aluno já agendou defesa
+* **Pos-condições**: Texto da defesa está atualizado 
+
+| Fluxo principal                                                |
+| -------------------------------------------------------------- |
+| 1. Aluno informa identificação da defesa e envia o texto       |
+| 2. Sistema exibe confirmação de atualização do texto da defesa |
+
+### UC12 - Agendar seminário
+
+* **Pré-condições**: -
+* **Pos-condições**: -
+
+| Fluxo principal |
+| --------------- |
+
+
+### UC13 - Cadastrar publicação
+* **Pré-condições**
+  * Aluno existe no sistema
+  * Aluno está autenticado
+  * Publicação ainda não existe no sistema
+* **Pos-condições**: Publicação existe no sistema
+
+| Fluxo Principal                                                   |
+| ----------------------------------------------------------------- |
+| 1. Aluno informa [dados da publicação](#dados-da-publicacao)      |
+| 2. Sistema confirma cadastro                                      |
+
+
+### UC14 - Visualizar publicação
+* **Pré-condições**
+  * Aluno existe no sistema
+  * Aluno está autenticado
+  * Publicação existe no sistema
+* **Pos-condições**: -
+
+| Fluxo principal                                                 |
+| --------------------------------------------------------------- |
+| 1. Aluno informa numero de cadastro do publicação               |
+| 2. Sistema exibe os [dados da publicação](#dados-da-publicacao) |
+
+
+### UC15 - Atualizar publicação
+* **Pré-condições**
+  * Aluno existe no sistema
+  * Aluno está autenticado
+  * Publicação existe no sistea
+* **Pos-condições**: Publicação é modificado no sistema
+
+| Fluxo principal                                                         |
+| ----------------------------------------------------------------------- |
+| 1. Aluno informa número de cadastro do publicação                       |
+| 2. Aluno informa novos [dados da publicação](#dados-da-publicacao)      |
+| 3. Sistema confirma atualização do publicação                           |
+
+
+### UC16 - Remover publicação
+* **Pré-condições**
+  * Aluno existe no sistema
+  * Aluno está autenticado
+  * Publicação existe no sistema
+* **Pos-condições**: Publicação não existe mais no sistema
+
+| Fluxo principal                                        |
+| ------------------------------------------------------ |
+| 1. Aluno informa número de cadastro do publicação      |
+| 2. Sistema confirma remoção do publicação              |
+
+
+### UC17 - Agendar defesa
+
+* **Pré-condições**: -
+* **Pos-condições**: -
+
+| Fluxo principal |
+| --------------- |
+
+
+### UC18 - Modificar banca da defesa
+
+* **Pré-condições**: -
+* **Pos-condições**: -
+
+| Fluxo principal |
+| --------------- |
+
+
+
+### UC19 - Confirmar participação na banca
+
+* **Pré-condições**: -
+* **Pos-condições**: -
+
+| Fluxo principal |
+| --------------- |
+
+
+
+### UC20 - Aprovar defesa
+
+* **Pré-condições**: -
+* **Pos-condições**: -
+
+| Fluxo principal |
+| --------------- |
+
+
+### UC21 - Rejeitar defesa
+
+* **Pré-condições**: -
+* **Pos-condições**: -
+
+| Fluxo principal |
+| --------------- |
+
+
+
+## Tabelas auxiliares
+
+### Dados do aluno
+
+| Campo | Descrição |
+| ----- | --------- |
+| Nome  | Nome Completo |
+| DRE   | Cadastro na universidade |
+
+
+### Dados do professor
+
+| Campo | Descrição |
+| ----- | --------- |
+| Nome  | Nome do professor |
+
+### Dados da publicação
+
+| Campo              | Descrição                                                                       |
+| -----              | ---------                                                                       |
+| TipoPublicacao     | Pode ser Revista, Congresso ou Periódico                                        |
+| PertenceAoPrograma | Verdadeiro ou falso. Se verdadeiro, esta publicação faz da pesquisa do programa |
+| Coautores          | Lista de coautores                                                              |
