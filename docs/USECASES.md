@@ -18,7 +18,8 @@ skinparam packageStyle rect
   DESTROY(actor,model)
 !enddefinelong
 
-:Membro da Banca: as B
+:Membro da Banca: as MB
+:Organizador de Seminario: as OS
 :Professor: as P
 :Orientador: as O
 :Aluno: as A
@@ -30,7 +31,6 @@ CRUD(S, professor)
 A -down- (Escolher professor orientador)
 A -down- (Agendar reunião com orientador)
 A -down- (Submeter texto para defesa)
-A -down- (Agendar seminário)
 CRUD(A,publicação)
 
 O -down- (Agendar defesa)
@@ -38,8 +38,15 @@ O -down- (Modificar banca da defesa)
 
 P -down- (Confirmar participação na banca)
 
-B -down- (Aprovar defesa)
-B -down- (Rejeitar defesa)
+CRUD(OS,seminário)
+
+MB -down- (Aprovar defesa)
+MB -down- (Rejeitar defesa)
+
+A -|> OS
+P -|> OS
+P -|> MB
+O -|> P
 @enduml
 ```
 
@@ -167,16 +174,7 @@ B -down- (Rejeitar defesa)
 | 1. Aluno informa identificação da defesa e envia o texto       |
 | 2. Sistema exibe confirmação de atualização do texto da defesa |
 
-### UC12 - Agendar seminário
-
-* **Pré-condições**: -
-* **Pos-condições**: -
-
-| Fluxo principal |
-| --------------- |
-
-
-### UC13 - Cadastrar publicação
+### UC12 - Cadastrar publicação
 * **Pré-condições**
   * Aluno existe no sistema
   * Aluno está autenticado
@@ -189,7 +187,7 @@ B -down- (Rejeitar defesa)
 | 2. Sistema confirma cadastro                                      |
 
 
-### UC14 - Visualizar publicação
+### UC13 - Visualizar publicação
 * **Pré-condições**
   * Aluno existe no sistema
   * Aluno está autenticado
@@ -202,7 +200,7 @@ B -down- (Rejeitar defesa)
 | 2. Sistema exibe os [dados da publicação](#dados-da-publicacao) |
 
 
-### UC15 - Atualizar publicação
+### UC14 - Atualizar publicação
 * **Pré-condições**
   * Aluno existe no sistema
   * Aluno está autenticado
@@ -216,7 +214,7 @@ B -down- (Rejeitar defesa)
 | 3. Sistema confirma atualização do publicação                           |
 
 
-### UC16 - Remover publicação
+### UC15 - Remover publicação
 * **Pré-condições**
   * Aluno existe no sistema
   * Aluno está autenticado
@@ -229,7 +227,7 @@ B -down- (Rejeitar defesa)
 | 2. Sistema confirma remoção do publicação              |
 
 
-### UC17 - Agendar defesa
+### UC16 - Agendar defesa
 
 * **Pré-condições**: -
 * **Pos-condições**: -
@@ -238,17 +236,7 @@ B -down- (Rejeitar defesa)
 | --------------- |
 
 
-### UC18 - Modificar banca da defesa
-
-* **Pré-condições**: -
-* **Pos-condições**: -
-
-| Fluxo principal |
-| --------------- |
-
-
-
-### UC19 - Confirmar participação na banca
+### UC17 - Modificar banca da defesa
 
 * **Pré-condições**: -
 * **Pos-condições**: -
@@ -258,7 +246,7 @@ B -down- (Rejeitar defesa)
 
 
 
-### UC20 - Aprovar defesa
+### UC18 - Confirmar participação na banca
 
 * **Pré-condições**: -
 * **Pos-condições**: -
@@ -267,7 +255,8 @@ B -down- (Rejeitar defesa)
 | --------------- |
 
 
-### UC21 - Rejeitar defesa
+
+### UC19 - Aprovar defesa
 
 * **Pré-condições**: -
 * **Pos-condições**: -
@@ -275,6 +264,55 @@ B -down- (Rejeitar defesa)
 | Fluxo principal |
 | --------------- |
 
+
+### UC20 - Rejeitar defesa
+
+* **Pré-condições**: -
+* **Pos-condições**: -
+
+| Fluxo principal |
+| --------------- |
+
+
+### UC21 - Cadastrar seminário
+* **Pré-condições**: Seminário ainda não existe no sistema
+* **Pos-condições**: Seminário existe no sistema
+
+| Fluxo Principal                                         |
+| ------------------------------------------------------- |
+| 1. Organizador do seminário informa [dados do seminário](#dados-do-seminario) |
+| 2. Sistema confirma cadastro                            |
+
+
+### UC22 - Visualizar seminário
+* **Pré-condições**: Seminário existe no sistema
+* **Pos-condições**: -
+
+| Fluxo principal                                       |
+| ----------------------------------------------------- |
+| 1. Organizador do seminário informa numero de cadastro do seminário     |
+| 2. Sistema exibe os [dados do seminário](#dados-do-seminario) |
+
+
+### UC23 - Atualizar seminário
+* **Pré-condições**: Seminário existe no sistea
+* **Pos-condições**: Seminário é modificado no sistema
+
+| Fluxo principal                                               |
+| ------------------------------------------------------------- |
+| 1. Organizador do seminário informa número de cadastro do seminário             |
+| 2. Organizador do seminário informa novos [dados do seminário](#dados-do-seminario) |
+| 3. Sistema confirma atualização do seminário                      |
+
+
+### UC24 - Remover seminário
+* **Pré-condições**: Seminário existe no sistema
+* **Pos-condições**: Seminário não existe mais no sistema
+
+| Fluxo principal                                   |
+| ------------------------------------------------- |
+| 1. Organizador do seminário informa número de cadastro do seminário |
+| 2. Sistema confirma remoção do seminário              |
 
 
 ## Tabelas auxiliares
@@ -296,7 +334,15 @@ B -down- (Rejeitar defesa)
 ### Dados da publicação
 
 | Campo              | Descrição                                                                       |
-| -----              | ---------                                                                       |
+| ------------------ | ------------------------------------------------------------------------------- |
 | TipoPublicacao     | Pode ser Revista, Congresso ou Periódico                                        |
 | PertenceAoPrograma | Verdadeiro ou falso. Se verdadeiro, esta publicação faz da pesquisa do programa |
 | Coautores          | Lista de coautores                                                              |
+
+### Dados do seminário
+
+| Campo     | Descricão                                            |
+| --------- | ---------------------------------------------------- |
+| Titulo    | Título do seminário                                  |
+| DataEHora | Quando o seminário ira acontecer                     |
+| Local     | Local onde o seminário irá acontecer. Ex: Sala H310A |
